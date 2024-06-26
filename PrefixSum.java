@@ -1,5 +1,36 @@
 import java.util.*;
+
 class PrefixSum {
+    /*
+    724. Find Pivot Index
+    Input: nums = [1,7,3,6,5,6]
+    Output: 3
+    
+    */
+    public int pivot(int[] arr) {
+        int n = arr.length;
+        int[] pre = new int[n];
+        pre[0] = arr[0];
+        for (int i = 1; i < n; i++) {
+            pre[i] = pre[i - 1] + arr[i];
+        }
+        
+        for (int i = 0; i < n; i++) {
+            int lSum = 0;
+            if (i > 0) {
+                lSum = pre[i];
+            }
+            int rSum = 0;
+            if (rSum < n) {
+                rSum = pre[n - 1] - pre[i];
+            }
+            if (lSum == rSum) {
+                return i;
+            }
+        }
+        return -1;
+        // Time Complexity -> O(n) + O(n);
+    }
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
