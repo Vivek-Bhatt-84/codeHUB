@@ -1,4 +1,4 @@
-Arrays :- 
+Arrays  Techniques :- 
 1.) Two Pointer
 2.) Binary Search
 3.) Prefix sum 
