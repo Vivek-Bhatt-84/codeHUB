@@ -1,13 +1,13 @@
 import java.util.*;
 
 class PrefixSum {
-    /*
-    724. Find Pivot Index
-    Input: nums = [1,7,3,6,5,6]
-    Output: 3
-    
-    */
     public int pivot(int[] arr) {
+        /*
+        724. Find Pivot Index
+        Input: nums = [1,7,3,6,5,6]
+        Output: 3
+        
+        */
         int n = arr.length;
         int[] pre = new int[n];
         pre[0] = arr[0];
