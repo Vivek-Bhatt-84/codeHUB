@@ -49,6 +49,7 @@ class PrefixSum {
     // }
 
     // public static int[] twoSum(int[] nums, int target) {
+        //binary search
     //     int n = nums.length;
     //     for (int i = 0; i < n; i++) {
     //         int s = i + 1;
@@ -70,6 +71,23 @@ class PrefixSum {
 
     // }
     public static int[] twoSum(int[] nums, int target) {
+        //two pointer 
+        int n = nums.length;
+        int s = 0;
+        int e = n - 1;
+        while (s <= e) {
+            if (nums[s] + nums[e] == target) {
+                return new int[] { s + 1, e + 1 };
+            }
+            if (nums[s] + nums[e] > target) {
+                e--;
+            } else {
+                s++;
+            }
+
+        }
+        return new int[] {};
+        //time complexity -> O(n)
     
 }
     public static void main(String args[]) {
