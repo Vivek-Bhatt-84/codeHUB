@@ -46,6 +46,8 @@ public class ThreeSum {
     // }   
 
     public static List<List<Integer>> threeSum(int[] arr) {
+        /// used 3 pointer -> Among the 3 pointers, 1 will be fixed and 2 will be moving.
+        //  In each iteration, we will check if the sum i.e.arr[i]+arr[j]+arr[k] is equal to the target i.e. 0. 
         int n = arr.length;
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(arr);
