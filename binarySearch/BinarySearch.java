@@ -3,6 +3,8 @@ package binarySearch;
 /* 
  * lower bound -> smallest index where arr[ind] >= x
  * upper bound -> smallest index where arr[ind] > x 
+ * floor  ->  largest no in array <= target 
+ * ceil -> smallest no in array >= target 
  */
 import java.util.Arrays;
 
@@ -10,8 +12,8 @@ class Pair {
     int floor, ceil;
 
     Pair() {
-        this.floor = 0; // largest no in array <= target 
-        this.ceil = 0; // smallest no in array >= target 
+        this.floor = 0; 
+        this.ceil = 0; 
     }
 
     Pair(int floor, int ceil) {
