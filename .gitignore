@@ -1,3 +1,4 @@
 # ignore all .class files
+# ignore all .json files 
 *.class
 *.json
