@@ -19,7 +19,24 @@ class Pair {
         this.ceil = ceil;
     }
 }
+
 public class BinarySearch {
+    public static int lowerBound(int[] arr, int target) {
+        int s = 0 , e = arr.length - 1;
+         int ans = -1;
+         while (s <= e) {
+             int mid = s + (e - s) / 2;
+             if (arr[mid] >= target) {
+                 ans = mid;
+                 s = mid + 1;
+             }
+             else{
+                 e = mid - 1;
+             }
+        }
+        return ans;
+        
+    }
     public static int bs(int[] arr, int target) {
         int low = 0;
         int high = arr.length - 1;
