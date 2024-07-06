@@ -1,3 +1,4 @@
+-> no of operations performed in 1 sec 10^8 .
 Arrays  Techniques :- 
 1.) Two Pointer
 2.) Binary Search
