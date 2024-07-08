@@ -41,9 +41,11 @@ public class FirstLastOccur {
         return last;
     }
     public static void main(String[] args) {
-        int[] arr = {  2 ,  8,  8 ,  8,  8,  8 , 11, 13 };
-        int x = 8;
+        int[] arr = {  10,11 };
+        int x = 10;
         int ans = last(arr, x);
+        int first = first(arr, x);
+        System.out.println(first);
         System.out.println(ans);
     }
 }
