@@ -2,7 +2,7 @@ package binarySearch;
 
 /**
  * time complexity -> brute force -> (maxi - mini +1) *O(n);
- * optimized -> o(nlogn)
+ * optimized -> o(nlog(max(arr)))
  */
 public class MinNoOfDaysToMakeBouquets {
     public static boolean isPossible(int[] arr, int day, int m, int k) {
